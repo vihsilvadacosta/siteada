@@ -1,6 +1,9 @@
-  if(document.getElementById("Nome").value != "" && document.getElementById("E-mail").value != ""){
-    alert("Prontinho! Você receberá as novidades por email.")
-  }else{
-    alert("Por favor, preencha os campos nome e email!")
+  document.getElementById("BotaoEnviar").addEventListener("click", validaFormulario)
+  
+  function validaFormulario(){
+    if(document.getElementById("Nome").value != "" && document.getElementById("E-mail").value != "" && document.getElementById("NumeroTel").value != ""){
+      alert("Prontinho! Você receberá as novidades por email.")
+    }else{
+      alert("Preencha todos os campos solicitados!")
+    }
   }
-
